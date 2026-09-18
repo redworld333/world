@@ -8,14 +8,14 @@ void loading() {
     for(int elTexto = 0; elTexto < text1.size(); elTexto++) {
         cout<< text1[elTexto] << endl;
 
-        this_thread::sleep_for(chrono::milliseconds(3500));
+        this_thread::sleep_for(chrono::milliseconds(3000));
     }
 }
 void Result(){
 
     clearConsole();
     cout<<"You are gay!";
-    this_thread::sleep_for(chrono::milliseconds(3000));
+    this_thread::sleep_for(chrono::milliseconds(2500));
 }
 
 int main(){
