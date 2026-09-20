@@ -83,17 +83,17 @@ int main() {
                 cout<< "He tells you: Говори, глупец. (from Russian: Speak, fool)" << endl;
 
                 string dec3;
-                cout<< "If you want to ask for armor, write (A), if you want to apologize fight him, write (D)" << endl;
+                cout<< "If you want to ask for armor, write (A), if you want to fight him, write (D)" << endl;
 
                 cin>> dec3;
 
                 clearConsole();
                 
                 if(dec3 == "A" || "a"){
-                    cout<< "Tsykov showed his mercy to you and gave you diamond armor, for your courage not to be scared talking to him";
-                    Armor = true;
+                    if (Armor == false) { cout<< "Tsykov showed his mercy to you and gave you diamond armor, for your courage not to be scared talking to him";
+                    Armor = true;}
                 }
-                if(dec3 == "D" || dec3 == "d"){
+                if (dec3 == "D" || dec3 == "d"){
                     cout<<"You died immediately, nice try, brave warrior";
                     isRunning = false;
             }
