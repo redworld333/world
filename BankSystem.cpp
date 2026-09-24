@@ -101,7 +101,7 @@ int main(){
                     if(money > 0){
                         DataBase[i].addBalance(money);
                     }
-                    else{
+                    if(money < 0){
                         clearConsole();
                         cout<<"Error, you wrote a negative number. " << endl;
                         string benjiro645;
@@ -125,7 +125,7 @@ int main(){
                     if(money2 > 0){
                         DataBase[i].reduceBalance(money2);
                     }
-                    else{
+                    if(money2 < 0){
                         clearConsole();
                         cout<<"Error, you wrote a negative number. " << endl;
                         string benjiro645;

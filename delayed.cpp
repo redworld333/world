@@ -3,7 +3,7 @@ using namespace std;
 void clearConsole() {
     cout << "\033[2J\033[1;1H";
 }
-void loading() {
+    void loading() {
     vector <string> text1 {"Loading. ", "Loading.. ", "Loading... "};
     for(int elTexto = 0; elTexto < text1.size(); elTexto++) {
         cout<< text1[elTexto] << endl;
@@ -11,7 +11,7 @@ void loading() {
         this_thread::sleep_for(chrono::milliseconds(3000));
     }
 }
-void Result(){
+        void Result(){
 
     clearConsole();
     cout<<"You are gay!";
@@ -20,6 +20,6 @@ void Result(){
 
 int main(){
     clearConsole();
-     loading();
-      Result();
+        loading();
+            Result();
 }
