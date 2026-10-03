@@ -95,11 +95,7 @@ int main(){
             double marksSum = 0;
             double marksAmount = 0;
             if(!Notan.empty()){
-                for(int i = 0; i < Notan.size(); i++){
-                    if(Notan[i].getMarksAmount() == 0){
-                        marksSum += 0;
-                    }
-                }
+
                 for(int i = 0; i < Notan.size(); i++){
                     marksSum += Notan[i].getSum();
                     marksAmount += Notan[i].getMarksAmount();
@@ -109,6 +105,7 @@ int main(){
                 cout<< "Average Grade: " << Avg << endl;
                 }
             }
+
             if(!Notan.empty()){
                 for(int i = 0; i < Notan.size(); i++){
                     Notan[i].subjectINFO();
@@ -149,8 +146,6 @@ int main(){
                     Notan[i].addMark(newMark);
                 }
             }
-
-        
         }
         if(dec1 == "5"){
             clearConsole();

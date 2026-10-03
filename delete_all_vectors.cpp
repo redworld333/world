@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
     
-    vector <int> vec {1, 3, 2, 4, 6, 5, 9};
+    vector <int> vec {1, 3, 2, 94, 6, 5, 9};
 
     while(!vec.empty()){
     for(int i = 0; i < vec.size(); i++){
