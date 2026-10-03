@@ -11,3 +11,4 @@ int main(){
         cout<< pair.first << ": " << pair.second << endl;
     }
 }
+// output of all name and age

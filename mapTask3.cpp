@@ -17,9 +17,13 @@ int main(){
     if(phoneNumber.count(name) > 0){
         phoneNumber.erase(name);
     }
+    else{
+        cout<<"There is no such a name. " << endl;
+    }
 
     for(auto& pair : phoneNumber){
         cout<< pair.first << " - " << pair.second << endl;
     }
     return 0;
 }
+// Deleting one giving number
